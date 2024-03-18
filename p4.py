@@ -42,7 +42,7 @@ class Layer_Dense:
         self.output = np.dot(inputs, self.weights) + self.biases
 
 layer1 = Layer_Dense(4, 5)
-layer2 = Layer_Dense(5,2) #input onlayer 2 must be the same size as output from layer 1
+layer2 = Layer_Dense(5,2) #input on layer 2 must be the same size as output from layer 1
 
 layer1.forward(X)
 print(layer1.output)
